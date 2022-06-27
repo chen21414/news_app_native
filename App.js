@@ -1,21 +1,26 @@
 import { View, Text, StyleSheet, StatusBar } from "react-native";
+import Context from "./API/Context";
 import InshortTabs from "./components/InshortTabs";
 
-export default function App() {
+function App() {
   return (
-    <View
-      style={{...styles.container, backgroundColor: "#282C35"}}
-    >
-      <InshortTabs/>
+    <View style={{ ...styles.container, backgroundColor: "#282C35" }}>
+      <InshortTabs />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex: 1,
     marginTop: StatusBar.currentHeight,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-})
+  },
+});
+
+export default () => {
+  return (
+    <Context>
+      <App />
+    </Context>
+  );
+};
