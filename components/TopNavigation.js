@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useContext } from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { SimpleLineIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import { NewsContext } from "../API/Context";
 
 const TopNavigation = ({ index, setIndex }) => {
+  const { fetchNews } = useContext(NewsContext);
   return (
     <View style={{ ...styles.container, backgroundColor: "#282C35" }}>
       {index === 0 ? (

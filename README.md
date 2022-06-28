@@ -44,4 +44,4 @@ This project can be run from a web browser or the Expo client app. You may find 
 - Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
 
 https://www.youtube.com/watch?v=5Ko7B3G4U04
-34:09
+1:06:36
